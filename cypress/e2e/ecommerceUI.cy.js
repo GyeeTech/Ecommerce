@@ -8,6 +8,7 @@ import ProductDetailPage from '../page-object/viewDetailsPage'
 import AppCartPage from '../page-object/cartPage'
 import CheckOutPage from '../page-object/checkOutPage'
 import OrderPage from '../page-object/viewOrdersPage'
+import ProducetManagementPage from '../page-object/productManagementPage'
 
 
 describe('User Authentication', () => {
@@ -19,6 +20,7 @@ describe('User Authentication', () => {
   const appCartPage = new AppCartPage()
   const checkOutPage = new CheckOutPage()
   const orderPage = new OrderPage()
+  const productManagementPage = new ProducetManagementPage()
 
 
    // Store credentials at describe level
@@ -86,5 +88,9 @@ describe('User Authentication', () => {
        checkOutPage.placeOrder()
        orderPage.viewOrderDetails()
    }) 
+
+   it.only('should create new product', () => {
+        productManagementPage.admin()
+   })
 
 })
