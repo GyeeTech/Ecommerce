@@ -65,7 +65,11 @@ describe('User Authentication', () => {
     it('should select product category', () => {
         pCP.selectCategory()
     })
- 
+
+    it('Add Multiple Product Quantity to Cart', ()=>{
+        addMultipleItemsPage.addMultipleItems()
+    })
+
     it('should view product details', () => {
         pDP.viewProduct()
     })
