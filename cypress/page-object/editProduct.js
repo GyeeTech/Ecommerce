@@ -4,3 +4,4 @@ class EditProduct{
         cy.get('.lucide-square-pen')
     }
 }
+export default EditProduct
