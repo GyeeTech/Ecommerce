@@ -8,6 +8,7 @@ import ProductDetailPage from '../page-object/viewDetailsPage'
 import AppCartPage from '../page-object/cartPage'
 import CheckOutPage from '../page-object/checkOutPage'
 import OrderPage from '../page-object/viewOrdersPage'
+import NewProduct from '../page-object/newProduct'
 
 
 describe('User Authentication', () => {
@@ -90,5 +91,11 @@ describe('User Authentication', () => {
         appCartPage.viewCart()
         checkOutPage.placeOrder()
         orderPage.viewOrderDetails()
-    }) 
+    })
+
+    it.only('Should add a new product to PDP', ()=> {
+        NewProduct.newStock()
+    })
+
+
 })
