@@ -20,7 +20,7 @@ describe('User Authentication', () => {
     const appCartPage = new AppCartPage()
     const checkOutPage = new CheckOutPage()
     const orderPage = new OrderPage()
-    const newProductPage = new newProductPage()
+    const newProductPage = new NewProductPage()
 
     // Store credentials at the describe level
     // Credentials stored in testCredentials variable (persist across all test)
