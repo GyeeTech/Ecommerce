@@ -95,7 +95,7 @@ describe('User Authentication', () => {
     })
 
     it.only('Should add a new product to PDP', ()=> {
-        newProduct.newStock()
+        newProductPage.newStock()
     })
 
 
