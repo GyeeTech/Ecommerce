@@ -8,7 +8,7 @@ import ProductDetailPage from '../page-object/viewDetailsPage'
 import AppCartPage from '../page-object/cartPage'
 import CheckOutPage from '../page-object/checkOutPage'
 import OrderPage from '../page-object/viewOrdersPage'
-import NewProduct from '../page-object/newProductPage'
+import NewProductPage from '../page-object/newProductPage'
 
 
 describe('User Authentication', () => {
@@ -20,7 +20,7 @@ describe('User Authentication', () => {
     const appCartPage = new AppCartPage()
     const checkOutPage = new CheckOutPage()
     const orderPage = new OrderPage()
-    const newProduct = newProductPage()
+    const newProductPage = new newProductPage()
 
     // Store credentials at the describe level
     // Credentials stored in testCredentials variable (persist across all test)
@@ -94,7 +94,7 @@ describe('User Authentication', () => {
         orderPage.viewOrderDetails()
     })
 
-    it('Should add a new product to PDP', ()=> {
+    it.only('Should add a new product to PDP', ()=> {
         newProduct.newStock()
     })
 
