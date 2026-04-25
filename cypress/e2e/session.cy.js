@@ -94,7 +94,7 @@ describe('User Authentication', () => {
         orderPage.viewOrderDetails()
     })
 
-    it.only('Should add a new product to PDP', ()=> {
+    it('Should add a new product to PDP', ()=> {
         newProduct.newStock()
     })
 
