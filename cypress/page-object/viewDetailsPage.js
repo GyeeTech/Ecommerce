@@ -1,8 +1,10 @@
 class ProductDetailPage {
     viewProduct() {
-        cy.get('button:contains("View Details")')
-            .eq(4)
-            .click()
+        cy.contains('h3', 'Noise-Cancelling Headphones')
+        .closest('.bg-white')
+        .find('button')
+        .contains('View Details')
+        .click()
         
         cy.get('h1')
             .should('be.visible')
