@@ -12,5 +12,4 @@ class ProducetManagementPage{
 
     }
 }
-
 export default ProducetManagementPage

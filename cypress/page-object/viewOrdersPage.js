@@ -1,6 +1,6 @@
 class OrderPage {
     viewOrderDetails() {
-        cy.contains('button','View Orders')
+        cy.contains('button','Orders')
         .click()
 
         cy.get('h1')
