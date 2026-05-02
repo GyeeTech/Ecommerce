@@ -9,6 +9,7 @@ import AppCartPage from '../page-object/cartPage'
 import CheckOutPage from '../page-object/checkOutPage'
 import OrderPage from '../page-object/viewOrdersPage'
 import NewProductPage from '../page-object/newProductPage'
+import AddMultipleItemsPage from '../page-object/addMultipleProducts'
 
 
 describe('User Authentication', () => {
@@ -21,6 +22,7 @@ describe('User Authentication', () => {
     const checkOutPage = new CheckOutPage()
     const orderPage = new OrderPage()
     const newProductPage = new NewProductPage()
+    const addMultipleItemsPage = new AddMultipleItemsPage()
 
     // Store credentials at the describe level
     // Credentials stored in testCredentials variable (persist across all test)
