@@ -80,19 +80,18 @@ describe('User Authentication', () => {
  
     it('should goto cart', () => {
         productPage.addToCart()
+        addMultipleItemsPage.addMultipleItems()
         appCartPage.viewCart()
     })
  
     it('should place order', () => {
         productPage.addToCart()
+        addMultipleItemsPage.addMultipleItems()
         appCartPage.viewCart()
         checkOutPage.placeOrder()
     })
  
     it('should view order details', () => {
-        productPage.addToCart()
-        appCartPage.viewCart()
-        checkOutPage.placeOrder()
         orderPage.viewOrderDetails()
     })
 
